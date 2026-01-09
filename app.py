@@ -113,7 +113,7 @@ with tab1:
         legend_title="Indicators"
         )
 
-    col1.plotly_chart(fig_rsi, use_container_width=True)
+    col1.plotly_chart(fig_rsi, width="stretch")
 
     fig_macd = go.Figure()
 
@@ -131,7 +131,7 @@ with tab1:
         legend_title="MACD Components"
         )
 
-    col2.plotly_chart(fig_macd, use_container_width=True)
+    col2.plotly_chart(fig_macd, width="stretch")
 
 
 
@@ -224,7 +224,7 @@ with tab2:
             legend_title="Forecast"
             )
 
-        st.plotly_chart(fig_lstm, use_container_width=True)
+        st.plotly_chart(fig_lstm, width="stretch")
 
         st.success("7-Day Forecast Generated")
 
@@ -262,7 +262,7 @@ with tab3:
 
         )
         
-        st.plotly_chart(fig_portfolio, use_container_width=True)
+        st.plotly_chart(fig_portfolio, width="stretch")
 
           
         st.success("Portfolio comparison completed")
